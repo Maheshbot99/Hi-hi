@@ -34,22 +34,23 @@ else:
 @Client.on_message(filters.private & filters.command(["start"]))
 async def start(client, message):
     old = insert(int(message.chat.id))
+    id = None
     try:
         id = message.text.split(' ')[1]
     except:
         txt=f"""**ʜᴇʟʟᴏ - {message.from_user.mention} , \nɪ  ᴀᴍ  ᴀɴ  ᴀᴅᴠᴀɴᴄᴇ  ꜰɪʟᴇ  ʀᴇɴᴀᴍᴇʀ  ᴀɴᴅ  ᴄᴏɴᴠᴇʀᴛᴇʀ  ʙᴏᴛ  ᴡɪᴛʜ  ᴘᴇʀᴍᴀɴᴇɴᴛ  ᴀɴᴅ  ᴄᴜsᴛᴏᴍ  ᴛʜᴜᴍʙɴᴀɪʟ  sᴜᴘᴘᴏʀᴛ. \n\nᴊᴜsᴛ  sᴇɴᴅ  ᴍᴇ  ᴀɴʏ  ᴠɪᴅᴇᴏ  ᴏʀ ᴅᴏᴄᴜᴍᴇɴᴛ !!**"""
         if LAZY_PIC:
             await message.reply_photo(photo=LAZY_PIC, caption=txt, reply_markup=InlineKeyboardMarkup(
-                                      [[InlineKeyboardButton("Pʀᴇᴍɪᴜᴍ Pʟᴀɴꜱ",callback_data = "upgrade")],
-                                      [InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url=f'https://t.me/{UPDATES_CHANNEL}'),
-                                      InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ Uꜱ", url=f'https://t.me/{SUPPORT_GROUP}')],
+                                      [[InlineKeyboardButton("✧ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴꜱ ✧",callback_data = "upgrade")],
+                                      [InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f'https://t.me/{UPDATES_CHANNEL}'),
+                                      InlineKeyboardButton("ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ", url=f'https://t.me/{SUPPORT_GROUP}')],
                                       [InlineKeyboardButton("• Hᴇʟᴩ •",callback_data = "help")]
                                       ]))
         else:
             await message.reply_text(text=txt, reply_markup=InlineKeyboardMarkup(
-                                      [[InlineKeyboardButton("Pʀᴇᴍɪᴜᴍ Pʟᴀɴꜱ",callback_data = "upgrade")],
-                                      [InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url=f'https://t.me/{UPDATES_CHANNEL}'),
-                                      InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ Uꜱ", url=f'https://t.me/{SUPPORT_GROUP}')],
+                                      [[InlineKeyboardButton("✧ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴꜱ ✧",callback_data = "upgrade")],
+                                      [InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f'https://t.me/{UPDATES_CHANNEL}'),
+                                      InlineKeyboardButton("ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ", url=f'https://t.me/{SUPPORT_GROUP}')],
                                       [InlineKeyboardButton("• Hᴇʟᴩ •",callback_data = "help")]
                                       ]))
     if id:
@@ -57,16 +58,16 @@ async def start(client, message):
             try:
                 if LAZY_PIC:
                    await message.reply_photo(photo=LAZY_PIC, caption=txt, reply_markup=InlineKeyboardMarkup(
-                                      [[InlineKeyboardButton("Pʀᴇᴍɪᴜᴍ Pʟᴀɴꜱ",callback_data = "upgrade")],
-                                      [InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url=f'https://t.me/{UPDATES_CHANNEL}'),
-                                      InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ Uꜱ", url=f'https://t.me/{SUPPORT_GROUP}')],
+                                      [[InlineKeyboardButton("✧ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴꜱ v",callback_data = "upgrade")],
+                                      [InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f'https://t.me/{UPDATES_CHANNEL}'),
+                                      InlineKeyboardButton("ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ", url=f'https://t.me/{SUPPORT_GROUP}')],
                                       [InlineKeyboardButton("• Hᴇʟᴩ •",callback_data = "help")]
                                       ]))
                 else:
                    await message.reply_text(text=txt, reply_markup=InlineKeyboardMarkup(
-                                      [[InlineKeyboardButton("Pʀᴇᴍɪᴜᴍ Pʟᴀɴꜱ",callback_data = "upgrade")],
-                                      [InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url=f'https://t.me/{UPDATES_CHANNEL}'),
-                                      InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ Uꜱ", url=f'https://t.me/{SUPPORT_GROUP}')],
+                                      [[InlineKeyboardButton("✧ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴꜱ ✧",callback_data = "upgrade")],
+                                      [InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f'https://t.me/{UPDATES_CHANNEL}'),
+                                      InlineKeyboardButton("ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ", url=f'https://t.me/{SUPPORT_GROUP}')],
                                       [InlineKeyboardButton("• Hᴇʟᴩ •",callback_data = "help")]
                                       ]))
             except:
@@ -81,9 +82,9 @@ async def start(client, message):
 	ʜᴇʟʟᴏ - {message.from_user.mention} , \nɪ  ᴀᴍ  ᴀɴ  ᴀᴅᴠᴀɴᴄᴇ  ꜰɪʟᴇ  ʀᴇɴᴀᴍᴇʀ  ᴀɴᴅ  ᴄᴏɴᴠᴇʀᴛᴇʀ  ʙᴏᴛ  ᴡɪᴛʜ  ᴘᴇʀᴍᴀɴᴇɴᴛ  ᴀɴᴅ  ᴄᴜsᴛᴏᴍ  ᴛʜᴜᴍʙɴᴀɪʟ  sᴜᴘᴘᴏʀᴛ. \n\nᴊᴜsᴛ  sᴇɴᴅ  ᴍᴇ  ᴀɴʏ  ᴠɪᴅᴇᴏ  ᴏʀ ᴅᴏᴄᴜᴍᴇɴᴛ !!**
 	""", reply_to_message_id=message.id,
                                      reply_markup=InlineKeyboardMarkup(
-                                      [[InlineKeyboardButton("Pʀᴇᴍɪᴜᴍ Pʟᴀɴꜱ",callback_data = "upgrade")],
-                                      [InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url=f'https://t.me/{UPDATES_CHANNEL}'),
-                                      InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ Uꜱ", url=f'https://t.me/{SUPPORT_GROUP}')],
+                                      [[InlineKeyboardButton("✧ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴꜱ ✧",callback_data = "upgrade")],
+                                      [InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f'https://t.me/{UPDATES_CHANNEL}'),
+                                      InlineKeyboardButton("ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ", url=f'https://t.me/{SUPPORT_GROUP}')],
                                       [InlineKeyboardButton("• Hᴇʟᴩ •",callback_data = "help")]
                                       ]))
     
@@ -122,9 +123,9 @@ async def send_doc(client,message):
     except:
         await message.reply_text(text=f"**ʜᴇʟʟᴏ {message.from_user.mention} , \n\nꜱᴏʀʀy ꜰᴏʀ ᴛʜɪꜱ ɪꜱꜱᴜᴇ \nᴡᴇ ᴀʀᴇ ᴄᴜʀʀᴇɴᴛʟy ᴡᴏʀᴋɪɴɢ ᴏɴ ᴛʜɪꜱ ɪꜱꜱᴜᴇ \nᴩʟᴇᴀꜱᴇ ʙᴜy ᴩʀᴇᴍɪᴜᴍ ᴏʀ ʀᴇꜱᴛᴀʀᴛ ʙᴏᴛ \n\nᴜꜱᴇ ᴛʜɪꜱ ᴄᴏᴍᴍᴀɴᴅ - /restart**",
                                   reply_markup=InlineKeyboardMarkup(
-                                      [[InlineKeyboardButton("Pʀᴇᴍɪᴜᴍ Pʟᴀɴꜱ",callback_data = "upgrade")],
-                                      [InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url=f'https://t.me/{UPDATES_CHANNEL}'),
-                                      InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ Uꜱ", url=f'https://t.me/{SUPPORT_GROUP}')],
+                                      [[InlineKeyboardButton("✧ ᴘʀᴇᴍɪᴜᴍ ᴘʟᴀɴꜱ ✧",callback_data = "upgrade")],
+                                      [InlineKeyboardButton("ᴄʜᴀɴɴᴇʟ", url=f'https://t.me/{UPDATES_CHANNEL}'),
+                                      InlineKeyboardButton("ᴄᴏɴᴛᴀᴄᴛ ᴜꜱ", url=f'https://t.me/{SUPPORT_GROUP}')],
                                       [InlineKeyboardButton("• Hᴇʟᴩ •",callback_data = "help")]
                                       ]))
         await message.reply_text(text=f"🦋")
@@ -179,7 +180,7 @@ async def send_doc(client,message):
                     uploadlimit(message.from_user.id, 2147483648)
                     usertype(message.from_user.id, "Free")
 
-                    await message.reply_text(f'**yᴏᴜʀ ᴩʟᴀɴ ᴇxᴩɪʀᴇᴅ ᴏɴ {buy_date}', quote=True)
+                    await message.reply_text(f'**yᴏᴜʀ ᴩʟᴀɴ ᴇxᴩɪʀᴇᴅ ᴏɴ {buy_date}**', quote=True)
                     return
             else:
                 await message.reply_text("**ᴜᴩɢʀᴀᴅᴇ yᴏᴜʀ ᴩʟᴀɴ ᴛᴏ ʀᴇɴᴀᴍᴇ ꜰɪʟᴇꜱ ʟᴀʀɢᴇʀ ᴛʜᴀɴ 2ɢʙ**")
