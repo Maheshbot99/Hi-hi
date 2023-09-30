@@ -11,13 +11,13 @@ async def upgrade(bot,update):
 **Gold 🏆 :- 99₹**
 **Diamond 💎 :- 159₹**
 
-**⌾  My Nᴀᴍᴇ - Thiruselvan**
+**⌾  My Nᴀᴍᴇ - Shivam Kumar Namdev**
 
-**⌾  Pʜᴏɴᴇ Pᴀy - Uᴩɪ :-** ```ThiruXD@ibl```
+**⌾  Pʜᴏɴᴇ Pᴀy - Uᴩɪ :-** ```shivam.2908@paytm```
 
-**🇳  🇴 🇹 🇪   :- ᴀꜰᴛᴇʀ ᴩᴀyᴍᴇɴᴛ ꜱᴇɴᴅ ꜱᴄʀᴇᴇɴ ꜱʜᴏᴛ'ꜱ ᴏꜰ ᴩᴀyᴍᴇɴᴛ ᴛᴏ ᴍᴇ - @{OWNER_USERNAME}**"""
+**𝙉𝙤𝙩𝙚   :- ᴀꜰᴛᴇʀ ᴩᴀyᴍᴇɴᴛ ꜱᴇɴᴅ ꜱᴄʀᴇᴇɴ ꜱʜᴏᴛ'ꜱ ᴏꜰ ᴩᴀyᴍᴇɴᴛ ᴛᴏ ᴍᴇ - @{OWNER_USERNAME}**"""
 	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("📸 Sᴇɴᴅ Mᴇ Sᴄʀᴇᴇɴꜱʜᴏᴛ 📸", url=f'https://t.me/{OWNER_USERNAME}')],[InlineKeyboardButton('°• Bᴀᴄᴋ •°', callback_data='upgrade')  ]])
+        			InlineKeyboardButton("💸 ᴅɪʀᴇᴄᴛ ᴘᴀʏᴍᴇɴᴛ ʟɪɴᴋ", url='http://bit.ly/IMDBdonate')],[InlineKeyboardButton("📸 Sᴇɴᴅ Mᴇ Sᴄʀᴇᴇɴꜱʜᴏᴛ 📸", url=f'https://t.me/{OWNER_USERNAME}')],[InlineKeyboardButton('°• Bᴀᴄᴋ •°', callback_data='upgrade')  ]])
 	await update.message.edit(text = text,reply_markup = keybord)
 	
 
@@ -29,12 +29,12 @@ async def upgradecm(bot,message):
 **Gold 🏆 :- 99₹**
 **Diamond 💎 :- 159₹**
 
-**⌾  My Nᴀᴍᴇ - Thiruselvan**
+**⌾  My Nᴀᴍᴇ - Shivam Kumar Namdev**
 
-**⌾  Pʜᴏɴᴇ Pᴀy - Uᴩɪ :-** ```ThiruXD@ibl```
+**⌾  Pʜᴏɴᴇ Pᴀy - Uᴩɪ :-** ```shivam.2908@paytm```
 
-**🇳  🇴 🇹 🇪   :- ᴀꜰᴛᴇʀ ᴩᴀyᴍᴇɴᴛ ꜱᴇɴᴅ ꜱᴄʀᴇᴇɴ ꜱʜᴏᴛ'ꜱ ᴏꜰ ᴩᴀyᴍᴇɴᴛ ᴛᴏ ᴍᴇ - @{OWNER_USERNAME}**"""
+**𝙉𝙤𝙩𝙚   :- ᴀꜰᴛᴇʀ ᴩᴀyᴍᴇɴᴛ ꜱᴇɴᴅ ꜱᴄʀᴇᴇɴ ꜱʜᴏᴛ'ꜱ ᴏꜰ ᴩᴀyᴍᴇɴᴛ ᴛᴏ ᴍᴇ - @{OWNER_USERNAME}**"""
 	keybord = InlineKeyboardMarkup([[ 
-        			InlineKeyboardButton("📸 Sᴇɴᴅ Mᴇ Sᴄʀᴇᴇɴꜱʜᴏᴛ 📸", url=f'https://t.me/{OWNER_USERNAME}')],[InlineKeyboardButton('°• Bᴀᴄᴋ •°', callback_data='upgrade')  ]])
+        			InlineKeyboardButton("💸 ᴅɪʀᴇᴄᴛ ᴘᴀʏᴍᴇɴᴛ ʟɪɴᴋ", url='http://bit.ly/IMDBdonate')],[InlineKeyboardButton("📸 Sᴇɴᴅ Mᴇ Sᴄʀᴇᴇɴꜱʜᴏᴛ 📸", url=f'https://t.me/{OWNER_USERNAME}')],[InlineKeyboardButton('°• Bᴀᴄᴋ •°', callback_data='upgrade')  ]])
 	await update.message.edit(text = text,reply_markup = keybord)
 	
