@@ -58,7 +58,7 @@ async def doc(bot, update):
     total_used = used + int(file.file_size)
     used_limit(update.from_user.id, total_used)
     try:
-        path = await bot.download_media(message=file, progress=progress_for_pyrogram, progress_args=("**✧ ʀᴇᴄɪᴇᴠɪɴɢ ꜰɪʟᴇ ꜰʀᴏᴍ ᴄʀᴀᴢʏ ꜱᴇʀᴠᴇʀ ✧**",  ms, c_time))
+        path = await bot.download_media(message=file, progress=progress_for_pyrogram, progress_args=("``` Trying To Download...```",  ms, c_time))
 
     except Exception as e:
         neg_used = used - int(file.file_size)
@@ -96,7 +96,7 @@ async def doc(bot, update):
 
     value = 2090000000
     if value < file.file_size:
-        await ms.edit("✧ ʀᴇᴄɪᴇᴠɪɴɢ ꜰɪʟᴇ ꜰʀᴏᴍ ᴄʀᴀᴢʏ ꜱᴇʀᴠᴇʀ ✧")
+        await ms.edit("```Trying To Upload```")
         try:
             filw = await app.send_document(LOG_CHANNEL, document=file_path, thumb=ph_path, caption=caption, progress=progress_for_pyrogram, progress_args=("**✧ ʀᴇᴄɪᴇᴠɪɴɢ ꜰɪʟᴇ ꜰʀᴏᴍ ᴄʀᴀᴢʏ ꜱᴇʀᴠᴇʀ ✧**",  ms, c_time))
             from_chat = filw.chat.id
@@ -119,7 +119,7 @@ async def doc(bot, update):
             except:
                 return
     else:
-        await ms.edit("**✧ ʀᴇᴄɪᴇᴠɪɴɢ ꜰɪʟᴇ ꜰʀᴏᴍ ᴄʀᴀᴢʏ ꜱᴇʀᴠᴇʀ ✧**")
+        await ms.edit("```Trying To Upload```")
         c_time = time.time()
         try:
             await bot.send_document(update.from_user.id, document=file_path, thumb=ph_path, caption=caption, progress=progress_for_pyrogram, progress_args=("**✧ ʀᴇᴄɪᴇᴠɪɴɢ ꜰɪʟᴇ ꜰʀᴏᴍ ᴄʀᴀᴢʏ ꜱᴇʀᴠᴇʀ ✧**",  ms, c_time))
@@ -144,7 +144,7 @@ async def vid(bot, update):
     file_path = f"downloads/{new_filename}"
     message = update.message.reply_to_message
     file = message.document or message.video or message.audio
-    ms = await update.message.edit("**ღ♡ ꜰɪʟᴇ ᴜɴᴅᴇʀ ᴄᴏɴꜱᴛʀᴜᴄᴛɪᴏɴ... ♡♪**")
+    ms = await update.message.edit("```Trying To Download...```")
     used_limit(update.from_user.id, file.file_size)
     c_time = time.time()
     total_used = used + int(file.file_size)
@@ -198,7 +198,7 @@ async def vid(bot, update):
 
     value = 2090000000
     if value < file.file_size:
-        await ms.edit("**ღ♡ ꜰɪʟᴇ ᴜɴᴅᴇʀ ᴄᴏɴꜱᴛʀᴜᴄᴛɪᴏɴ... ♡♪**")
+        await ms.edit("```Trying To Upload```")
         try:
             filw = await app.send_video(LOG_CHANNEL, video=file_path, thumb=ph_path, duration=duration, caption=caption, progress=progress_for_pyrogram, progress_args=("**✧ ʀᴇᴄɪᴇᴠɪɴɢ ꜰɪʟᴇ ꜰʀᴏᴍ ᴄʀᴀᴢʏ ꜱᴇʀᴠᴇʀ ✧**",  ms, c_time))
             from_chat = filw.chat.id
@@ -221,7 +221,7 @@ async def vid(bot, update):
             except:
                 return
     else:
-        await ms.edit("**✧ ʀᴇᴄɪᴇᴠɪɴɢ ꜰɪʟᴇ ꜰʀᴏᴍ ᴄʀᴀᴢʏ ꜱᴇʀᴠᴇʀ ✧**")
+        await ms.edit("```Trying To Upload```")
         c_time = time.time()
         try:
             await bot.send_video(update.from_user.id, video=file_path, thumb=ph_path, duration=duration, caption=caption, progress=progress_for_pyrogram, progress_args=("**ღ♡ ꜰɪʟᴇ ᴜɴᴅᴇʀ ᴄᴏɴꜱᴛʀᴜᴄᴛɪᴏɴ... ♡♪**",  ms, c_time))
