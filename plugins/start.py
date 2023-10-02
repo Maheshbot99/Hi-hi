@@ -52,7 +52,7 @@ async def start(client, message):
                                       InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ Uꜱ", url=f'https://t.me/{SUPPORT_GROUP}')],
                                       [InlineKeyboardButton("• Hᴇʟᴩ •",callback_data = "help")]
                                       ]))
-    if id:
+    if id :
         if old == True:
             try:
                 if LAZY_PIC:
