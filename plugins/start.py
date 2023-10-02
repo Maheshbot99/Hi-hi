@@ -52,23 +52,6 @@ async def start(client, message):
                                       InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ Uꜱ", url=f'https://t.me/{SUPPORT_GROUP}')],
                                       [InlineKeyboardButton("• Hᴇʟᴩ •",callback_data = "help")]
                                       ]))
-    if id :
-        if old == True:
-            try:
-                if LAZY_PIC:
-                   await message.reply_photo(photo=LAZY_PIC, caption=txt, reply_markup=InlineKeyboardMarkup(
-                                      [[InlineKeyboardButton("Pʀᴇᴍɪᴜᴍ Pʟᴀɴꜱ",callback_data = "upgrade")],
-                                      [InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url=f'https://t.me/{UPDATES_CHANNEL}'),
-                                      InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ Uꜱ", url=f'https://t.me/{SUPPORT_GROUP}')],
-                                      [InlineKeyboardButton("• Hᴇʟᴩ •",callback_data = "help")]
-                                      ]))
-                else:
-                   await message.reply_text(text=txt, reply_markup=InlineKeyboardMarkup(
-                                      [[InlineKeyboardButton("Pʀᴇᴍɪᴜᴍ Pʟᴀɴꜱ",callback_data = "upgrade")],
-                                      [InlineKeyboardButton("Cʜᴀɴɴᴇʟ", url=f'https://t.me/{UPDATES_CHANNEL}'),
-                                      InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ Uꜱ", url=f'https://t.me/{SUPPORT_GROUP}')],
-                                      [InlineKeyboardButton("• Hᴇʟᴩ •",callback_data = "help")]
-                                      ]))
             except:
                 return
         else:
