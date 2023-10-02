@@ -9,7 +9,7 @@ from pyrogram.types import (
 import humanize
 from helper.progress import humanbytes
 from config import *
-from helper.database import insert, find_one, used_limit, usertype, uploadlimit, addpredata, total_rename, total_size
+from helper.database import id, insert, find_one, used_limit, usertype, uploadlimit, addpredata, total_rename, total_size
 from pyrogram.file_id import FileId
 from helper.database import daily as daily_
 from helper.date import check_expi
@@ -52,7 +52,7 @@ async def start(client, message):
                                       InlineKeyboardButton("Cᴏɴᴛᴀᴄᴛ Uꜱ", url=f'https://t.me/{SUPPORT_GROUP}')],
                                       [InlineKeyboardButton("• Hᴇʟᴩ •",callback_data = "help")]
                                       ]))
-    if :
+    if id:
         if old == True:
             try:
                 if LAZY_PIC:
